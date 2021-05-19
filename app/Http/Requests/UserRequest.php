@@ -31,7 +31,7 @@ class UserRequest extends FormRequest
                 'required',
                 Rule::unique('users')->ignore(Auth::user()->id)
             ],
-            'phone' => 'nullable|min:8|numeric',
+            'address' => 'nullable|min:8|numeric',
             'about' => 'nullable|min:10|max:1024'
         ];
     }

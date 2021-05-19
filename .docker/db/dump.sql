@@ -466,7 +466,7 @@ CREATE TABLE `users` (
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `about` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_admin` tinyint(1) NOT NULL DEFAULT 0,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -479,7 +479,7 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `phone`, `about`, `is_admin`, `remember_token`, `created_at`, `updated_at`)
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `address`, `about`, `is_admin`, `remember_token`, `created_at`, `updated_at`)
 VALUES
 	(1,'Prof. Johnathon Metz','rachael35@example.org','$2y$10$M/UACbqJT4WuHsgc4y.caO8y9gKZi0WUoHOlrJs8nBpxkpx6JhEF.','471-224-3613','Quam rerum accusantium repudiandae molestiae quae minus explicabo explicabo est iste blanditiis fugit.',0,'P2OffUhNqG','2019-09-16 13:29:39','2019-09-16 13:29:39'),
 	(2,'Kenneth Purdy','feest.gracie@example.com','$2y$10$M/UACbqJT4WuHsgc4y.caO8y9gKZi0WUoHOlrJs8nBpxkpx6JhEF.','1-820-872-2161 x376','Aperiam ut quibusdam enim dolores aliquam et in.',0,'jEaBen2VUl','2019-09-16 13:29:39','2019-09-16 13:29:39'),

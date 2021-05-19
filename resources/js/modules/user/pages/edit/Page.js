@@ -21,7 +21,7 @@ class Page extends Component {
     this.validator = new Validator({
       'name': 'required|min:3',
       'email': 'required|email',
-      'phone': 'min:8|numeric',
+      'address': 'min:8',
       'about': 'min:10|max:1024',
     })
     

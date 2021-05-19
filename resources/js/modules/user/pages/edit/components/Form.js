@@ -38,16 +38,16 @@ const Form = ({ user, errors, onChange, onSubmit }) => {
       </div>
     </div>
     <div className="form-group row">
-      <label htmlFor="phone" className="col-sm-2 col-form-label">Phone</label>
+      <label htmlFor="address" className="col-sm-2 col-form-label">address</label>
       <div className="col-sm-10">
         <input type="text"
-               id="phone"
-               name="phone"
-               className={`form-control ${errors.has('phone') && 'is-invalid'}`}
-               placeholder="Phone"
-               value={user.phone || ''}
+               id="address"
+               name="address"
+               className={`form-control ${errors.has('address') && 'is-invalid'}`}
+               placeholder="address"
+               value={user.address || ''}
                onChange={e => onChange(e.target.name, e.target.value)}/>
-        {errors.has('phone') && <div className="invalid-feedback">{errors.first('phone')}</div>}
+        {errors.has('address') && <div className="invalid-feedback">{errors.first('address')}</div>}
       </div>
     </div>
     <div className="form-group row">

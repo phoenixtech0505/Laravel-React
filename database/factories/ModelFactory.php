@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'phone' => $faker->phoneNumber,
+        'address' => $faker->phoneNumber,
         'about' => $faker->sentence(10),
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => Str::random(10),

@@ -12,7 +12,7 @@ class User extends Model {
 
     this.name = props.name || ''
     this.email = props.email || ''
-    this.phone = props.phone || ''
+    this.address = props.address || ''
     this.about = props.about || ''
   }
 }
